@@ -19,7 +19,7 @@ class BaseController: UIViewController {
         configure()
     }
     
-   
+    
 }
 
 @objc extension BaseController {
@@ -29,9 +29,23 @@ class BaseController: UIViewController {
         
         view.backgroundColor = .white
         
+        
     }
     
+    func navBarLefButtonHandler() {
+        
+        print("l")
+        
+    }
+    
+    func navBarRightButtonHandler() {
+        
+        print("r")
+        
+    }
 }
+    
+
 
 extension BaseController {
     
@@ -40,6 +54,17 @@ extension BaseController {
         button.setTitle(title, for: .normal)
         button.setTitleColor(Resources.Colors.active, for: .normal)
         button.setTitleColor(Resources.Colors.inactive, for: .disabled)
+        button.titleLabel?.font = Resources.Fonts.helveticaRegular(with: 17)
+        
+        switch position {
+            
+        case .left:
+            button.addTarget(self, action: #selector(navBarLefButtonHandler), for: .touchUpInside)
+            navigationItem.leftBarButtonItem = UIBarButtonItem(customView: button)
+        case .right:
+            button.addTarget(self, action: #selector(navBarRightButtonHandler), for: .touchUpInside)
+            navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
+        }
     }
     
 }
