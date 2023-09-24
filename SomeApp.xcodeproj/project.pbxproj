@@ -12,7 +12,6 @@
 		A80AE0F22A54245B00067765 /* FeedConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80AE0F12A54245B00067765 /* FeedConroller.swift */; };
 		A80AE0F72A54245D00067765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80AE0F62A54245D00067765 /* Assets.xcassets */; };
 		A80AE0FA2A54245D00067765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80AE0F82A54245D00067765 /* LaunchScreen.storyboard */; };
-		A814DEDE2A8D82A50016E53F /* sup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A814DEDD2A8D82A50016E53F /* sup.swift */; };
 		A81E4A452A621756006D695A /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81E4A442A621756006D695A /* SessionController.swift */; };
 		A81E4A472A62176C006D695A /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81E4A462A62176C006D695A /* ProgressController.swift */; };
 		A81E4A4B2A634E11006D695A /* GitHack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81E4A4A2A634E11006D695A /* GitHack.swift */; };
@@ -23,6 +22,7 @@
 		A83B5A592A58F99600B9C2BD /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83B5A582A58F99600B9C2BD /* Resources.swift */; };
 		A86354AA2A5E8448000216FF /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86354A92A5E8448000216FF /* NavBarController.swift */; };
 		A86354AD2A5E86BF000216FF /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86354AC2A5E86BF000216FF /* BaseController.swift */; };
+		A8BBB2A12AC0AA28005B2B4D /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BBB2A02AC0AA28005B2B4D /* SecondaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,6 @@
 		A80AE0F62A54245D00067765 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A80AE0F92A54245D00067765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A80AE0FB2A54245D00067765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A814DEDD2A8D82A50016E53F /* sup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sup.swift; sourceTree = "<group>"; };
 		A81E4A442A621756006D695A /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		A81E4A462A62176C006D695A /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		A81E4A4A2A634E11006D695A /* GitHack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHack.swift; sourceTree = "<group>"; };
@@ -44,6 +43,7 @@
 		A83B5A582A58F99600B9C2BD /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		A86354A92A5E8448000216FF /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		A86354AC2A5E86BF000216FF /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		A8BBB2A02AC0AA28005B2B4D /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +131,7 @@
 		A821F2272A606F28005A5F79 /* Overview */ = {
 			isa = PBXGroup;
 			children = (
+				A8BBB29F2AC0AA0D005B2B4D /* Views */,
 				A821F2282A606F57005A5F79 /* OverviewController.swift */,
 			);
 			path = Overview;
@@ -172,9 +173,16 @@
 				A80AE0F62A54245D00067765 /* Assets.xcassets */,
 				A80AE0F82A54245D00067765 /* LaunchScreen.storyboard */,
 				A80AE0FB2A54245D00067765 /* Info.plist */,
-				A814DEDD2A8D82A50016E53F /* sup.swift */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		A8BBB29F2AC0AA0D005B2B4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A8BBB2A02AC0AA28005B2B4D /* SecondaryButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,9 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8BBB2A12AC0AA28005B2B4D /* SecondaryButton.swift in Sources */,
 				A821F2232A606A19005A5F79 /* UIViewExt.swift in Sources */,
 				A81E4A452A621756006D695A /* SessionController.swift in Sources */,
-				A814DEDE2A8D82A50016E53F /* sup.swift in Sources */,
 				A80AE0F22A54245B00067765 /* FeedConroller.swift in Sources */,
 				A83B5A512A58D56A00B9C2BD /* TabBarController.swift in Sources */,
 				A80AE0EE2A54245B00067765 /* AppDelegate.swift in Sources */,
