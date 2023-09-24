@@ -12,6 +12,7 @@
 		A80AE0F22A54245B00067765 /* FeedConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80AE0F12A54245B00067765 /* FeedConroller.swift */; };
 		A80AE0F72A54245D00067765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80AE0F62A54245D00067765 /* Assets.xcassets */; };
 		A80AE0FA2A54245D00067765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80AE0F82A54245D00067765 /* LaunchScreen.storyboard */; };
+		A814DEDE2A8D82A50016E53F /* sup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A814DEDD2A8D82A50016E53F /* sup.swift */; };
 		A81E4A452A621756006D695A /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81E4A442A621756006D695A /* SessionController.swift */; };
 		A81E4A472A62176C006D695A /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81E4A462A62176C006D695A /* ProgressController.swift */; };
 		A81E4A4B2A634E11006D695A /* GitHack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81E4A4A2A634E11006D695A /* GitHack.swift */; };
@@ -32,6 +33,7 @@
 		A80AE0F62A54245D00067765 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A80AE0F92A54245D00067765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A80AE0FB2A54245D00067765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A814DEDD2A8D82A50016E53F /* sup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sup.swift; sourceTree = "<group>"; };
 		A81E4A442A621756006D695A /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		A81E4A462A62176C006D695A /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		A81E4A4A2A634E11006D695A /* GitHack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHack.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				A80AE0F62A54245D00067765 /* Assets.xcassets */,
 				A80AE0F82A54245D00067765 /* LaunchScreen.storyboard */,
 				A80AE0FB2A54245D00067765 /* Info.plist */,
+				A814DEDD2A8D82A50016E53F /* sup.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			files = (
 				A821F2232A606A19005A5F79 /* UIViewExt.swift in Sources */,
 				A81E4A452A621756006D695A /* SessionController.swift in Sources */,
+				A814DEDE2A8D82A50016E53F /* sup.swift in Sources */,
 				A80AE0F22A54245B00067765 /* FeedConroller.swift in Sources */,
 				A83B5A512A58D56A00B9C2BD /* TabBarController.swift in Sources */,
 				A80AE0EE2A54245B00067765 /* AppDelegate.swift in Sources */,

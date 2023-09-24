@@ -50,6 +50,7 @@ class BaseController: UIViewController {
 extension BaseController {
     
     func addNavBarButton(position: NavBarPosition, with title: String) {
+        
         let button = UIButton(type: .system)
         button.setTitle(title, for: .normal)
         button.setTitleColor(Resources.Colors.active, for: .normal)
@@ -57,7 +58,6 @@ extension BaseController {
         button.titleLabel?.font = Resources.Fonts.helveticaRegular(with: 17)
         
         switch position {
-            
         case .left:
             button.addTarget(self, action: #selector(navBarLefButtonHandler), for: .touchUpInside)
             navigationItem.leftBarButtonItem = UIBarButtonItem(customView: button)

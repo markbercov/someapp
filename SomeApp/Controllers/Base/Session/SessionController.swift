@@ -14,8 +14,8 @@ class SessionController: BaseController {
         super.viewDidLoad()
         
         title = "s"
-        navigationController?.tabBarItem.title = Resources.Strings.TabBar.camera
-        addNavBarButton(position: .left, with: "pas")
-        addNavBarButton(position: .right, with: "adsds")
+        navigationController?.tabBarItem.title = Resources.Strings.TabBar.session
+        addNavBarButton(position: .left, with: "SesLeft")
+        addNavBarButton(position: .right, with: "Sesrig")
     }
 }

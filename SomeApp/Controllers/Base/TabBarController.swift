@@ -9,9 +9,9 @@ import UIKit
 
 enum Tabs: Int {
     
-    case feed
-    case multi
-    case camera
+    case overview
+    case session
+    case progress
     case order
     case any
     
@@ -38,33 +38,36 @@ final class TabBarController: UITabBarController {
         tabBar.unselectedItemTintColor = Resources.TopColors.inactive
         
         
-        let feedController = OverviewController()
-        let multiController = ProgressController()
-        let cameraController = SessionController()
+        let overviewController = OverviewController()
+        let sessionController = SessionController()
+        let progressController = ProgressController()
         let orderController = UIViewController()
         let anyController =  UIViewController()
 //OverviewController()
         
-        let feedNavigation = NavBarController(rootViewController: feedController)
-        let multiNavigation = NavBarController(rootViewController: multiController)
-        let cameraNavigation = NavBarController(rootViewController: cameraController)
+        let overviewNavigation = NavBarController(rootViewController: overviewController)
+        let sessionNavigation = NavBarController(rootViewController: sessionController)
+        let progressNavigation = NavBarController(rootViewController: progressController)
         let orderNavigation = NavBarController(rootViewController: orderController)
         let anyNavigation = NavBarController(rootViewController: anyController)
         
-        feedController.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.feed, image: Resources.Images.TabBar.feed, tag: Tabs.feed.rawValue)
         
-        multiNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.multi, image: Resources.Images.TabBar.multi, tag: Tabs.multi.rawValue)
+    //MARK:
+ 
+        overviewNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.overview, image: Resources.Images.TabBar.overview, tag: Tabs.overview.rawValue)
         
-        cameraNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.camera, image: Resources.Images.TabBar.camera, tag: Tabs.camera.rawValue)
+        sessionNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.session, image: Resources.Images.TabBar.session, tag: Tabs.session.rawValue)
+        
+        progressNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.progress, image: Resources.Images.TabBar.progress, tag: Tabs.progress.rawValue)
         
         orderNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.order, image: Resources.Images.TabBar.order, tag: Tabs.order.rawValue)
         
         anyNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.any, image: Resources.Images.TabBar.any, tag: Tabs.any.rawValue)
         
         setViewControllers([
-            feedNavigation,
-            multiNavigation,
-            cameraNavigation,
+            overviewNavigation,
+            sessionNavigation,
+            progressNavigation,
             orderNavigation,
             anyNavigation
         ],animated: false)

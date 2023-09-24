@@ -28,9 +28,9 @@ enum Resources {
     
     enum Strings {
         enum TabBar {
-            static var feed = "Overview"
-            static var multi = "Session"
-            static var camera = "Progress"
+            static var overview = "Overview"
+            static var session = "Session"
+            static var progress = "Progress"
             static var order = "Order"
             static var any = "Any"
         }
@@ -38,9 +38,9 @@ enum Resources {
     
     enum Images {
         enum TabBar {
-            static var feed = UIImage(systemName: "newspaper.fill")
-            static var multi = UIImage(systemName: "tablecells.badge.ellipsis")
-            static var camera = UIImage(systemName: "camera.fill")
+            static var overview = UIImage(systemName: "newspaper.fill")
+            static var session = UIImage(systemName: "tablecells.badge.ellipsis")
+            static var progress = UIImage(systemName: "camera.fill")
             static var order = UIImage(systemName: "info.circle.fill")
             static var any = UIImage(systemName: "minus.plus.batteryblock")
         }
