@@ -20,6 +20,10 @@ enum Resources {
         
     }
     
+    enum Overview {
+        static var allWorkoutsButton = "All Workouts"
+    }
+    
     enum TopColors {
         static var lacoste = UIColor(hexString: "#F38BA0")
         static var inactive = UIColor(hexString: "#437BFE")
@@ -43,6 +47,11 @@ enum Resources {
             static var progress = UIImage(systemName: "camera.fill")
             static var order = UIImage(systemName: "info.circle.fill")
             static var any = UIImage(systemName: "minus.plus.batteryblock")
+            
+        }
+        
+        enum Common {
+            static var allWorkoutsButton = UIImage(systemName: "lineweight")
         }
     }
     
