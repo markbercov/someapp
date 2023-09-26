@@ -47,6 +47,7 @@ enum Resources {
             static var progress = UIImage(systemName: "camera.fill")
             static var order = UIImage(systemName: "info.circle.fill")
             static var any = UIImage(systemName: "minus.plus.batteryblock")
+            static var plus = UIImage(systemName: "plus.circle")
             
         }
         
