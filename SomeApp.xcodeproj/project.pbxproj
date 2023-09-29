@@ -17,6 +17,7 @@
 		A81E4A4B2A634E11006D695A /* GitHack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81E4A4A2A634E11006D695A /* GitHack.swift */; };
 		A821F2232A606A19005A5F79 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821F2222A606A19005A5F79 /* UIViewExt.swift */; };
 		A821F2292A606F57005A5F79 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821F2282A606F57005A5F79 /* OverviewController.swift */; };
+		A8343E8A2AC6E37F0086DDBE /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8343E892AC6E37F0086DDBE /* DateExt.swift */; };
 		A83B5A512A58D56A00B9C2BD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83B5A502A58D56A00B9C2BD /* TabBarController.swift */; };
 		A83B5A542A58F40500B9C2BD /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83B5A532A58F40500B9C2BD /* UIColorExt.swift */; };
 		A83B5A592A58F99600B9C2BD /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83B5A582A58F99600B9C2BD /* Resources.swift */; };
@@ -24,6 +25,8 @@
 		A86354AD2A5E86BF000216FF /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86354AC2A5E86BF000216FF /* BaseController.swift */; };
 		A86C44992AC365B3003BD97C /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86C44982AC365B3003BD97C /* OverviewNavBar.swift */; };
 		A86C449B2AC36613003BD97C /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86C449A2AC36613003BD97C /* BaseView.swift */; };
+		A8A83C8B2AC58DA10031B2A1 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A83C8A2AC58DA10031B2A1 /* WeekView.swift */; };
+		A8A83C8D2AC590FC0031B2A1 /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A83C8C2AC590FC0031B2A1 /* WeekDayView.swift */; };
 		A8BBB2A12AC0AA28005B2B4D /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BBB2A02AC0AA28005B2B4D /* SecondaryButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +43,7 @@
 		A81E4A4A2A634E11006D695A /* GitHack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHack.swift; sourceTree = "<group>"; };
 		A821F2222A606A19005A5F79 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		A821F2282A606F57005A5F79 /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
+		A8343E892AC6E37F0086DDBE /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 		A83B5A502A58D56A00B9C2BD /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		A83B5A532A58F40500B9C2BD /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
 		A83B5A582A58F99600B9C2BD /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		A86354AC2A5E86BF000216FF /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		A86C44982AC365B3003BD97C /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		A86C449A2AC36613003BD97C /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		A8A83C8A2AC58DA10031B2A1 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		A8A83C8C2AC590FC0031B2A1 /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
 		A8BBB2A02AC0AA28005B2B4D /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +155,7 @@
 				A83B5A582A58F99600B9C2BD /* Resources.swift */,
 				A821F2222A606A19005A5F79 /* UIViewExt.swift */,
 				A81E4A4A2A634E11006D695A /* GitHack.swift */,
+				A8343E892AC6E37F0086DDBE /* DateExt.swift */,
 			);
 			path = Exstensions;
 			sourceTree = "<group>";
@@ -182,9 +189,19 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		A8A83C892AC58D7C0031B2A1 /* WeakView */ = {
+			isa = PBXGroup;
+			children = (
+				A8A83C8A2AC58DA10031B2A1 /* WeekView.swift */,
+				A8A83C8C2AC590FC0031B2A1 /* WeekDayView.swift */,
+			);
+			path = WeakView;
+			sourceTree = "<group>";
+		};
 		A8BBB29F2AC0AA0D005B2B4D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A8A83C892AC58D7C0031B2A1 /* WeakView */,
 				A8BBB2A02AC0AA28005B2B4D /* SecondaryButton.swift */,
 				A86C44982AC365B3003BD97C /* OverviewNavBar.swift */,
 			);
@@ -265,11 +282,13 @@
 				A821F2232A606A19005A5F79 /* UIViewExt.swift in Sources */,
 				A81E4A452A621756006D695A /* SessionController.swift in Sources */,
 				A80AE0F22A54245B00067765 /* FeedConroller.swift in Sources */,
+				A8A83C8B2AC58DA10031B2A1 /* WeekView.swift in Sources */,
 				A83B5A512A58D56A00B9C2BD /* TabBarController.swift in Sources */,
 				A80AE0EE2A54245B00067765 /* AppDelegate.swift in Sources */,
 				A81E4A4B2A634E11006D695A /* GitHack.swift in Sources */,
 				A86354AA2A5E8448000216FF /* NavBarController.swift in Sources */,
 				A83B5A592A58F99600B9C2BD /* Resources.swift in Sources */,
+				A8343E8A2AC6E37F0086DDBE /* DateExt.swift in Sources */,
 				A83B5A542A58F40500B9C2BD /* UIColorExt.swift in Sources */,
 				A81E4A472A62176C006D695A /* ProgressController.swift in Sources */,
 				A86354AD2A5E86BF000216FF /* BaseController.swift in Sources */,
@@ -277,6 +296,7 @@
 				A80AE0F02A54245B00067765 /* SceneDelegate.swift in Sources */,
 				A86C44992AC365B3003BD97C /* OverviewNavBar.swift in Sources */,
 				A86C449B2AC36613003BD97C /* BaseView.swift in Sources */,
+				A8A83C8D2AC590FC0031B2A1 /* WeekDayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
