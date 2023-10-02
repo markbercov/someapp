@@ -32,23 +32,35 @@ enum Resources {
     
     enum Strings {
         enum TabBar {
-            static var overview = "Overview"
-            static var session = "Session"
-            static var progress = "Progress"
-            static var order = "Order"
-            static var any = "Any"
+            static func title(for tab: Tabs) -> String {
+                switch tab {
+                case .overview: return "Overview"
+                case .session: return "Session"
+                case .progress: return "Progress"
+                case .order: return "Order"
+                case .any: return "Any"
+               
+                }
+            }
         }
     }
     
     enum Images {
         enum TabBar {
-            static var overview = UIImage(systemName: "newspaper.fill")
-            static var session = UIImage(systemName: "tablecells.badge.ellipsis")
-            static var progress = UIImage(systemName: "camera.fill")
-            static var order = UIImage(systemName: "info.circle.fill")
-            static var any = UIImage(systemName: "minus.plus.batteryblock")
+            
             static var plus = UIImage(systemName: "plus.circle")
             
+            static func icon(for tab: Tabs) -> UIImage? {
+                
+                switch tab {
+                case .overview: return UIImage(systemName: "newspaper.fill")
+                case .session: return UIImage(systemName: "tablecells.badge.ellipsis")
+                case .progress: return UIImage(systemName: "camera.fill")
+                case .order: return UIImage(systemName: "info.circle.fill")
+                case .any: return UIImage(systemName: "minus.plus.batteryblock")
+                
+                }
+            }
         }
         
         enum Common {

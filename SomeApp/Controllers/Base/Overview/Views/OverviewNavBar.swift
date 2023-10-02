@@ -30,15 +30,15 @@ final class OverviewNavBar: BaseView {
 }
 
 extension OverviewNavBar {
-    override func addViews() {
-        super.addViews()
+    override func setupViews() {
+        super.setupViews()
         addView(allWorkoutsButton)
         addView(titleLabel)
         addView(addButton)
         addView(weakView)
     }
-    override func layoutViews() {
-        super.layoutViews()
+    override func constraintViews() {
+        super.constraintViews()
         
         NSLayoutConstraint.activate([
         
@@ -67,8 +67,8 @@ extension OverviewNavBar {
         
         
     }
-    override func configureViews() {
-        super.configureViews()
+    override func configureAppearance() {
+        super.configureAppearance()
         backgroundColor = .white
         
      
@@ -80,7 +80,7 @@ extension OverviewNavBar {
         
         
       
-        titleLabel.text = Resources.Strings.TabBar.overview
+     //   titleLabel.text = Resources.Strings.TabBar.overview
         titleLabel.textColor = Resources.TopColors.levis
         titleLabel.font = Resources.Fonts.helveticaRegular(with: 22)
         

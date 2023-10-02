@@ -15,7 +15,7 @@ class OverviewController: BaseController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.tabBarItem.title = Resources.Strings.TabBar.overview
+       // navigationController?.tabBarItem.title = Resources.Strings.TabBar.overview
         
         addNavBarButton(position: .left, with: "LEFT BUTTON")
         addNavBarButton(position: .right, with: "RIGHT BITCH!")
