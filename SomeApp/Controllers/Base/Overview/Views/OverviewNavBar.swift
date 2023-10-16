@@ -8,9 +8,23 @@
 import UIKit
 
 final class OverviewNavBar: BaseView {
-    private let allWorkoutsButton = SecondaryButton()
-    private let addButton = UIButton()
-    private let titleLabel = UILabel()
+    private let allWorkoutsButton: WAButton = {
+        let button = WAButton(with: .secondary)
+        button.setTitle(title: Resources.Overview.allWorkoutsButton)
+        return button
+    }()
+    private let addButton: UIButton = {
+        let button = UIButton()
+        button.setImage(Resources.Images.TabBar.plus, for: .normal)
+        return button
+    }()
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = Resources.Strings.TabBar.title(for: .overview)
+        label.textColor = Resources.TopColors.levis
+        label.font = Resources.Fonts.helveticaRegular(with: 22)
+        return label
+    }()
     
     private let weakView = WeekView()
     
@@ -50,7 +64,7 @@ extension OverviewNavBar {
             allWorkoutsButton.topAnchor.constraint(equalTo: addButton.topAnchor),
             allWorkoutsButton.trailingAnchor.constraint(equalTo: addButton.leadingAnchor, constant: -15),
             allWorkoutsButton.heightAnchor.constraint(equalToConstant: 28),
-            allWorkoutsButton.widthAnchor.constraint(equalToConstant: 130),
+            
             
             titleLabel.centerYAnchor.constraint(equalTo: allWorkoutsButton.centerYAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: allWorkoutsButton.leadingAnchor),
@@ -64,32 +78,11 @@ extension OverviewNavBar {
             
         ])
         
-        
-        
     }
     override func configureAppearance() {
         super.configureAppearance()
         backgroundColor = .white
-        
      
-       
-     
-        addButton.setImage(Resources.Images.TabBar.plus, for: .normal)
-        
-        
-        
-        
-      
-     //   titleLabel.text = Resources.Strings.TabBar.overview
-        titleLabel.textColor = Resources.TopColors.levis
-        titleLabel.font = Resources.Fonts.helveticaRegular(with: 22)
-        
-        
-        
-    
-        allWorkoutsButton.setTitle(title: Resources.Overview.allWorkoutsButton)
-        
-        
     }
 }
 

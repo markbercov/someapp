@@ -10,14 +10,14 @@ import UIKit
 
 class SessionController: BaseController {
     
-    private let timerView: BaseInfoView = {
-        let view = BaseInfoView()
-        
+    private let timerView: WABaseInfoView = {
+        let view = WABaseInfoView(with: "TEST", buttonTitle: "testbutton".uppercased())
+        //до 14 минуты просмотри
         return view
     }()
 }
     
-
+ 
 
 
 extension SessionController {

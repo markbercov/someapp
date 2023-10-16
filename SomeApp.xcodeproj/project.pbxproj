@@ -27,8 +27,8 @@
 		A86C449B2AC36613003BD97C /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86C449A2AC36613003BD97C /* BaseView.swift */; };
 		A8A83C8B2AC58DA10031B2A1 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A83C8A2AC58DA10031B2A1 /* WeekView.swift */; };
 		A8A83C8D2AC590FC0031B2A1 /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A83C8C2AC590FC0031B2A1 /* WeekDayView.swift */; };
-		A8BBB2A12AC0AA28005B2B4D /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BBB2A02AC0AA28005B2B4D /* SecondaryButton.swift */; };
-		A8D0CAAE2AC76008006F78C6 /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D0CAAD2AC76008006F78C6 /* BaseInfoView.swift */; };
+		A8BBB2A12AC0AA28005B2B4D /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BBB2A02AC0AA28005B2B4D /* WAButton.swift */; };
+		A8D0CAAE2AC76008006F78C6 /* WABaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D0CAAD2AC76008006F78C6 /* WABaseInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,8 +54,8 @@
 		A86C449A2AC36613003BD97C /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		A8A83C8A2AC58DA10031B2A1 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		A8A83C8C2AC590FC0031B2A1 /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
-		A8BBB2A02AC0AA28005B2B4D /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
-		A8D0CAAD2AC76008006F78C6 /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
+		A8BBB2A02AC0AA28005B2B4D /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
+		A8D0CAAD2AC76008006F78C6 /* WABaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +120,7 @@
 				A81E4A412A6216A3006D695A /* Progress */,
 				A821F2272A606F28005A5F79 /* Overview */,
 				A83B5A502A58D56A00B9C2BD /* TabBarController.swift */,
+				A8BBB2A02AC0AA28005B2B4D /* WAButton.swift */,
 				A86354A92A5E8448000216FF /* NavBarController.swift */,
 				A86354AC2A5E86BF000216FF /* BaseController.swift */,
 				A86C449A2AC36613003BD97C /* BaseView.swift */,
@@ -188,9 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				A8A83C892AC58D7C0031B2A1 /* WeakView */,
-				A8BBB2A02AC0AA28005B2B4D /* SecondaryButton.swift */,
 				A86C44982AC365B3003BD97C /* OverviewNavBar.swift */,
-				A8D0CAAD2AC76008006F78C6 /* BaseInfoView.swift */,
+				A8D0CAAD2AC76008006F78C6 /* WABaseInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -265,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8BBB2A12AC0AA28005B2B4D /* SecondaryButton.swift in Sources */,
+				A8BBB2A12AC0AA28005B2B4D /* WAButton.swift in Sources */,
 				A821F2232A606A19005A5F79 /* UIViewExt.swift in Sources */,
 				A80AE0F22A54245B00067765 /* FeedConroller.swift in Sources */,
 				A8A83C8B2AC58DA10031B2A1 /* WeekView.swift in Sources */,
@@ -284,7 +284,7 @@
 				A86C44992AC365B3003BD97C /* OverviewNavBar.swift in Sources */,
 				A86C449B2AC36613003BD97C /* BaseView.swift in Sources */,
 				A8A83C8D2AC590FC0031B2A1 /* WeekDayView.swift in Sources */,
-				A8D0CAAE2AC76008006F78C6 /* BaseInfoView.swift in Sources */,
+				A8D0CAAE2AC76008006F78C6 /* WABaseInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

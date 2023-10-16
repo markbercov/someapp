@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BaseInfoView: BaseView {
+class WABaseInfoView: BaseView {
     
     private let titleLabel: UILabel = {
         var label = UILabel()
@@ -16,12 +16,7 @@ class BaseInfoView: BaseView {
         return label
     }()
     
-    private let button: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = .red
-        return button
-        
-    }()
+    private let button = WAButton(with: .primary)
     
     private let contentView: UIView = {
         let view = UIView()
@@ -40,17 +35,20 @@ class BaseInfoView: BaseView {
        
     }
     
-    required init?(coder: NSCoder) {
-        super.init(frame: .zero)
-    }
     
     init(with title: String? = nil, buttonTitle: String? = nil) {
         titleLabel.text = title?.uppercased()
         titleLabel.textAlignment = buttonTitle == nil ? .center : .left
         
         button.setTitle(buttonTitle, for: .normal)
-        button.isHidden = buttonTitle == nil ? false  : true
+        button.tintColor = .blue
+        button.backgroundColor = .red
+        button.isHidden = buttonTitle == nil ? true : false
         
+        super.init(frame: .zero)
+    }
+    
+    required init?(coder: NSCoder) {
         super.init(frame: .zero)
     }
     
@@ -59,11 +57,11 @@ class BaseInfoView: BaseView {
     }
 }
 
-extension BaseInfoView {
+extension WABaseInfoView {
     
     override func setupViews() {
         super.setupViews()
-        
+    
         setupView(titleLabel)
         setupView(button)
         setupView(contentView)
